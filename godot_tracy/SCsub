@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+Import("env")
+Import("env_modules")
+
+env_tracy = env_modules.Clone()
+
+tracy_dir = "./tracy/"
+
+tracy_src = [
+    "TracyClient.cpp",
+]
+
+tracy_sources = [tracy_dir + file for file in tracy_src]
+
+# Treat headers as system headers to avoid raising warnings. Not supported on MSVC.
+if not env.msvc:
+    env_tracy.Append(CPPFLAGS=["-isystem", Dir(tracy_dir).path])
+else:
+    env_tracy.Prepend(CPPPATH=[tracy_dir])
+
+env_tracy.disable_warnings()
+
+env_tracy.Append(CPPDEFINES=["TRACY_ENABLE"])
+env.Append(CPPDEFINES=["TRACY_ENABLE"])
+
+env_tracy.add_source_files(env.modules_sources, "*.cpp")
+env_tracy.add_source_files(env.modules_sources, tracy_sources)

@@ -1,0 +1,3 @@
+[submodule "godot_tracy/tracy"]
+	path = godot_tracy/tracy
+	url = https://github.com/wolfpld/tracy
