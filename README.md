@@ -1,6 +1,8 @@
 # GodotTracy
 [Tracy Profiler](https://github.com/wolfpld/tracy) module for the [Godot Engine](https://github.com/godotengine/godot)
 
+![](godot_tracy_screenshot.png)
+
 `git clone --recurse-submodules https://github.com/Pineapple/GodotTracy.git`
 
 Copy `godot_tracy` folder to modules folder in Godot sources.
