@@ -1,5 +1,5 @@
 # GodotTracy
-[Tracy Profiler](https://github.com/wolfpld/tracy) module for the Godot Engine
+[Tracy Profiler](https://github.com/wolfpld/tracy) module for the [Godot Engine](https://github.com/godotengine/godot)
 
 `git clone --recurse-submodules https://github.com/Pineapple/GodotTracy.git`
 
