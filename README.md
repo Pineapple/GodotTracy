@@ -5,6 +5,6 @@ Tracy Profiler module for the Godot Engine
 
 Copy `godot_tracy` folder to modules folder in Godot sources.
 
-Add `tracy_enabled = true` to your SCons command to build with Tracy enabled.
+Add `module_godot_tracy_enabled = true` to your SCons command to build with Tracy enabled.
 
 Get Tracy documentation and profiler binary from [releases page](https://github.com/wolfpld/tracy/releases/).
