@@ -5,7 +5,8 @@ Import("env_modules")
 
 env_tracy = env_modules.Clone()
 
-tracy_dir = "./tracy/public/"
+# tracy_dir = "./tracy/public/"
+tracy_dir = "./tracy/"
 
 tracy_src = [
     "TracyClient.cpp",
